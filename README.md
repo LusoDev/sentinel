@@ -43,7 +43,7 @@ Set up a crontab entry to call Sentinel every minute:
 
 In the crontab editor, add the lines below, replacing '/home/YOURUSERNAME/sentinel' to the path where you cloned sentinel to:
 
-    * * * * * cd /home/YOURUSERNAME/sentinel && ./venv/bin/python bin/sentineluso.py >/dev/null 2>&1
+    * * * * * cd /home/YOURUSERNAME/sentinel && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1
 
 ### 4. Test the Configuration
 
@@ -63,7 +63,7 @@ An alternative (non-default) path to the `luso.conf` file can be specified in `s
 
 To view debug output, set the `SENTINEL_DEBUG` environment variable to anything non-zero, then run the script manually:
 
-    $ SENTINEL_DEBUG=1 ./venv/bin/python bin/sentineluso.py
+    $ SENTINEL_DEBUG=1 ./venv/bin/python bin/sentinel.py
 
 ## Contributing
 
