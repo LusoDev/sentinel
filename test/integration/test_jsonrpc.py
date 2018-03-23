@@ -16,7 +16,7 @@ def test_dashd():
     config_text = DashConfig.slurp_config_file(config.dash_conf)
     network = 'mainnet'
     is_testnet = False
-    genesis_hash = u'000002b203767e3de750f5e729ca1bdce28687d7b83f461cd6f484bbf8d5adf4'
+    genesis_hash = u'00000ee6635b617e6b850ba638411c956bc5e0b977c2aa466a2116b4b767599c'
     for line in config_text.split("\n"):
         if line.startswith('testnet=1'):
             network = 'testnet'
