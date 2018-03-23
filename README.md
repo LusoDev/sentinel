@@ -1,6 +1,6 @@
 # Dash Sentinel
 
-An all-powerful toolset for Dash.
+An all-powerful toolset for Luso.
 
 [![Build Status](https://travis-ci.org/dashpay/sentinel.svg?branch=master)](https://travis-ci.org/dashpay/sentinel)
 
@@ -31,7 +31,7 @@ Make sure the local Dash daemon running is at least version 12.1 (120100)
 
 Clone the Sentinel repo and install Python dependencies.
 
-    $ git clone https://github.com/dashpay/sentinel.git && cd sentinel
+    $ git clone https://github.com/lusodev/sentinel.git && cd sentinel
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
@@ -43,7 +43,7 @@ Set up a crontab entry to call Sentinel every minute:
 
 In the crontab editor, add the lines below, replacing '/home/YOURUSERNAME/sentinel' to the path where you cloned sentinel to:
 
-    * * * * * cd /home/YOURUSERNAME/sentinel && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1
+    * * * * * cd /home/YOURUSERNAME/sentinel && ./venv/bin/python bin/sentineluso.py >/dev/null 2>&1
 
 ### 4. Test the Configuration
 
@@ -63,7 +63,7 @@ An alternative (non-default) path to the `luso.conf` file can be specified in `s
 
 To view debug output, set the `SENTINEL_DEBUG` environment variable to anything non-zero, then run the script manually:
 
-    $ SENTINEL_DEBUG=1 ./venv/bin/python bin/sentinel.py
+    $ SENTINEL_DEBUG=1 ./venv/bin/python bin/sentineluso.py
 
 ## Contributing
 
