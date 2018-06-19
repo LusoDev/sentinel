@@ -21,7 +21,7 @@ def test_dashd():
         if line.startswith('testnet=1'):
             network = 'testnet'
             is_testnet = True
-            genesis_hash = u'00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c'
+            genesis_hash = u'000004d72c95dada076575d05dddfb8be794c5ff8e6fa983e18b509995a03740'
 
     creds = DashConfig.get_rpc_creds(config_text, network)
     dashd = DashDaemon(**creds)
@@ -29,7 +29,7 @@ def test_dashd():
 
     assert hasattr(dashd, 'rpc_connection')
 
-    # Dash testnet block 0 hash == 00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c
+    # LUSO testnet block 0 hash == 000004d72c95dada076575d05dddfb8be794c5ff8e6fa983e18b509995a03740
     # test commands without arguments
     info = dashd.rpc_command('getinfo')
     info_keys = [
